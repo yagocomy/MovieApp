@@ -1,44 +1,61 @@
-🎬 MovieApp
-Aplicativo iOS desenvolvido em Swift, utilizando UIKit + View Code + MVVM, com consumo da API do TheMovieDB (TMDb).
+# 🎬 MovieApp
+
+Aplicativo iOS desenvolvido em **Swift**, utilizando **UIKit + View Code + MVVM**, com consumo da API do **TheMovieDB (TMDb)**.  
 O projeto faz parte de um processo seletivo e demonstra boas práticas de arquitetura, organização de código, testes, componentes reutilizáveis e integração com API REST.
 
-<img width="200" height="500" alt="simulator_screenshot_12A2DB4F-9A41-4E42-96BE-32E21311F117" src="https://github.com/user-attachments/assets/843c247c-14f9-4e4d-8881-3e495d5a819c" />
-<img width="200" height="500" alt="simulator_screenshot_923D0CB7-11A8-42EA-A32D-8A09DB3C7BDE" src="https://github.com/user-attachments/assets/91bd0aa5-5b6b-466d-8d80-60769e027e03" />
-<img width="200" height="500" alt="simulator_screenshot_9704F5BE-6D42-4D3D-93FC-E38807A26649" src="https://github.com/user-attachments/assets/9b4c56f8-3614-4a33-a7fb-e4fd99eea4a5" />
+---
 
-📎 Repositório
+## 📸 Screenshots
+
+<img width="200" height="500" src="https://github.com/user-attachments/assets/843c247c-14f9-4e4d-8881-3e495d5a819c" />
+<img width="200" height="500" src="https://github.com/user-attachments/assets/91bd0aa5-5b6b-466d-8d80-60769e027e03" />
+<img width="200" height="500" src="https://github.com/user-attachments/assets/9b4c56f8-3614-4a33-a7fb-e4fd99eea4a5" />
+
+---
+
+## 📎 Repositório
+
 👉 https://github.com/yagocomy/MovieApp
 
-🚀 Sobre o Projeto
+---
+
+## 🚀 Sobre o Projeto
 
 O MovieApp exibe uma lista de filmes populares, permite buscar filmes, visualizar detalhes, favoritar e desfavoritar filmes, além de exibir uma tela dedicada aos favoritos.
 
-O app foi criado com foco em:
--  Arquitetura clara (MVVM)
--  Layout programático (View Code)
--  Componentização
--  Clean code
--  Testes unitários e testes UI
--  Modularização por camadas
--  Uso de SPM e kingFisher
+### O app foi criado com foco em:
+- Arquitetura clara (**MVVM**)
+- Layout programático (**View Code**)
+- Componentização
+- Clean Code
+- Testes unitários e testes UI
+- Modularização por camadas
+- Uso de **Swift Package Manager** e **Kingfisher**
 
-  🛠 Tecnologias Utilizadas
+---
 
-Swift 5+
+## 🛠 Tecnologias Utilizadas
+
+- Swift 5+
 - Xcode 26.1.1
 - UIKit
-- ViewCode
+- View Code
 - MVVM
 - URLSession
 - TheMovieDB API
 - UserDefaults para persistência básica
-- XCTest para Unit Tests
-- XCUITest para UI Tests
+- XCTest (Unit Tests)
+- XCUITest (UI Tests)
 
+---
 
-▶️ Como Executar o Projeto
-1. Clonar o repositório
+## ▶️ Como Executar o Projeto
+
+### 1. Clonar o repositório
+
+```bash
 git clone https://github.com/yagocomy/MovieApp.git
+
 
 2. Abrir o projeto
 Abra o arquivo:
