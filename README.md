@@ -53,7 +53,7 @@ O MovieApp exibe uma lista de filmes populares, permite buscar filmes, visualiza
 
 ### 1. Clonar o repositório
 
-```bash
+
 git clone https://github.com/yagocomy/MovieApp.git
 
 
@@ -64,7 +64,7 @@ MovieApp.xcodeproj
 Nenhuma configuração extra é necessária além da API Key.
 
 
-🔑 Configuração da API (IMPORTANTE)
+## 🔑 Configuração da API (IMPORTANTE)
 
 O app utiliza a API pública do TheMovieDB, e para funcionar é obrigatório inserir:
 -  API Key v3
@@ -75,58 +75,53 @@ O app utiliza a API pública do TheMovieDB, e para funcionar é obrigatório ins
 -  Vá em Settings → API
 -  Gere sua API Key e Token - [https://developer.themoviedb.org/docs/authentication-application](https://www.themoviedb.org/settings/api)
 
-Edite o Arquivo APIKey 
-
-enum APIKey {
-    static let apiKey = "SUA_API_KEY"
-    static let bearerToken = "SEU_BEARER_TOKEN"
-}
+Edite o Arquivo ApiKey.json
 
 ⚠️ Sem este passo o app não faz requisições.
 
 
-📱 Funcionalidades do APP
-Listagem de filmes populares
-Busca por filmes
-Exibição de título, imagem e descrição
-Expand/Collapse da sinopse
-Favoritar e desfavoritar Filmes
-Tela dedicada aos favoritos
-Estado de lista vazia com UI personalizada
-Tela de loading
-Tratamento de erro e fallback visual
+## 📱 Funcionalidades do APP
+-  Listagem de filmes populares
+-  Busca por filmes
+-  Exibição de título, imagem e descrição
+-  Expand/Collapse da sinopse
+-  Favoritar e desfavoritar Filmes
+-  Tela dedicada aos favoritos
+-  Estado de lista vazia com UI personalizada
+-  Tela de loading
+-  Tratamento de erro e fallback visual
 
 
-🧠 Decisões Técnicas e Motivação
-🧩 MVVM
+### 🧠 Decisões Técnicas e Motivação
+## 🧩 MVVM
 Escolhido para:
-Separar responsabilidades
-Facilitar testes unitários
-Manter a ViewController mais limpa
-Criar bindings simples entre ViewModel e View
-🧩 View Code
-Utilizei View Code para:
-Garantir controle total sobre o layout
-Evitar conflitos de Storyboard
-Manter um fluxo de desenvolvimento mais escalável
-Facilitar reutilização de componentes
-🧩 Persistência de dados
-Foi utilizado Swift Data para salvar localmente os dados.
-🧩 Tela de favoritos vazia
-A tela de favoritos exibe:
-Loading
-Coração e texto estilizado
-Estado vazio sem tratar como erro
-Essa decisão foi tomada porque o caso "nenhum favorito" não representa falha da API.
+-  Separar responsabilidades
+-  Facilitar testes unitários
+-  Manter a ViewController mais limpa
+-  Criar bindings simples entre ViewModel e View
+## 🧩 View Code
+-  Utilizei View Code para:
+-  Garantir controle total sobre o layout
+-  Evitar conflitos de Storyboard
+-  Manter um fluxo de desenvolvimento mais escalável
+-  Facilitar reutilização de componentes
+## 🧩 Persistência de dados
+-  Foi utilizado Swift Data para salvar localmente os dados.
+## 🧩 Tela de favoritos vazia
+-  A tela de favoritos exibe:
+-  Loading
+-   Coração e texto estilizado
+-  Estado vazio sem tratar como erro
+-  Essa decisão foi tomada porque o caso "nenhum favorito" não representa falha da API.
 
-🧪 Testes
-✔️ Testes Unitários
-Testes da ViewModel
-Testes de formatação
-Testes de persistência
-Testes de fluxo de favoritar/desfavoritar
-✔️ Testes de UI
-Fluxo de navegação
-Busca
-Favoritar / desfavoritar
-Verificação da tela vazia
+## 🧪 Testes
+## ✔️ Testes Unitários
+-  Testes da ViewModel
+-  Testes de formatação
+-  Testes de persistência
+-  Testes de fluxo de favoritar/desfavoritar
+## ✔️ Testes de UI
+-  Fluxo de navegação
+-  Busca
+-  Favoritar / desfavoritar
+-  Verificação da tela vazia
