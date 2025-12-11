@@ -20,11 +20,12 @@ O app foi criado com foco em:
 -  Clean code
 -  Testes unitários e testes UI
 -  Modularização por camadas
--  so de SPM e kingFisher
+-  Uso de SPM e kingFisher
 
   🛠 Tecnologias Utilizadas
 
 Swift 5+
+- Xcode 26.1.1
 - UIKit
 - ViewCode
 - MVVM
@@ -50,18 +51,20 @@ Nenhuma configuração extra é necessária além da API Key.
 
 O app utiliza a API pública do TheMovieDB, e para funcionar é obrigatório inserir:
 -  API Key v3
-- Bearer Token v4
+-  Bearer Token v4
 -  Como gerar:
--  cesse https://www.themoviedb.org
+-  Acesse https://www.themoviedb.org
 -  Crie uma conta
 -  Vá em Settings → API
--  Gere sua API Key e Token
+-  Gere sua API Key e Token - [https://developer.themoviedb.org/docs/authentication-application](https://www.themoviedb.org/settings/api)
 
 Edite o Arquivo APIKey 
+
 enum APIKey {
     static let apiKey = "SUA_API_KEY"
     static let bearerToken = "SEU_BEARER_TOKEN"
 }
+
 ⚠️ Sem este passo o app não faz requisições.
 
 
@@ -85,14 +88,13 @@ Facilitar testes unitários
 Manter a ViewController mais limpa
 Criar bindings simples entre ViewModel e View
 🧩 View Code
-Utilizei View Code com SnapKit para:
+Utilizei View Code para:
 Garantir controle total sobre o layout
 Evitar conflitos de Storyboard
 Manter um fluxo de desenvolvimento mais escalável
 Facilitar reutilização de componentes
-🧩 Persistência
-Como o escopo é simples, utilizei UserDefaults para armazenar favoritos localmente.
-Para um produto final, migraria para Core Data ou Realm.
+🧩 Persistência de dados
+Foi utilizado Swift Data para salvar localmente os dados.
 🧩 Tela de favoritos vazia
 A tela de favoritos exibe:
 Loading
