@@ -75,7 +75,7 @@ O app utiliza a API pública do TheMovieDB, e para funcionar é obrigatório ins
 -  Vá em Settings → API
 -  Gere sua API Key e Token - [https://developer.themoviedb.org/docs/authentication-application](https://www.themoviedb.org/settings/api)
 
-Edite o Arquivo ApiKey.json
+Edite o Arquivo ApiKey.json, insira sua chave e token gerados. 
 
 ⚠️ Sem este passo o app não faz requisições.
 
