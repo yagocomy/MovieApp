@@ -36,7 +36,7 @@ O MovieApp exibe uma lista de filmes populares, permite buscar filmes, visualiza
 
 ## 🛠 Tecnologias Utilizadas
 
-- Swift 5+
+- Swift 6.2.1
 - Xcode 26.1.1
 - UIKit
 - View Code
