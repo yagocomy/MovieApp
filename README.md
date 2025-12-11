@@ -43,7 +43,6 @@ O MovieApp exibe uma lista de filmes populares, permite buscar filmes, visualiza
 - MVVM
 - URLSession
 - TheMovieDB API
-- UserDefaults para persistência básica
 - XCTest (Unit Tests)
 - XCUITest (UI Tests)
 
