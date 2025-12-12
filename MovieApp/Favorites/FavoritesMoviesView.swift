@@ -15,7 +15,6 @@ final class FavoritesMoviesView: UIView {
     }
     
     // MARK: - UI
-    
     private let favoritesLabel: UILabel = {
         let lbl = UILabel()
         lbl.text = "Here is your favorite movies."
@@ -39,7 +38,6 @@ final class FavoritesMoviesView: UIView {
     weak var delegate: MoviesViewDelegate?
     
     // MARK: - Init
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -51,7 +49,6 @@ final class FavoritesMoviesView: UIView {
     }
     
     // MARK: - Setup
-    
     private func setupViews() {
         addSubview(favoritesLabel)
         addSubview(moviesTableView)
